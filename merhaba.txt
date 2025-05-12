@@ -1,1 +1,3 @@
 Merhaba Github!
+
+ozellik-deneme branch'ı oluşturuldu.
