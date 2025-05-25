@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -31,9 +33,16 @@ public class Main {
         System.out.println("İsim: " + isim);*/
 
         // Java'da final anahtar kelimesi, bir değişkenin değerinin bir kez atandıktan sonra değiştirilemeyeceğini belirtir (yani sabit/constant yapar).
-        final int SAYI = 10;
+       /* final int SAYI = 10;
         System.out.println("Sabit Sayı: " + SAYI);
         final double PI = 3.14;
-        System.out.println(PI);
+        System.out.println(PI);*/
+
+        // Scanner: Kullanıcıdan klavye aracılığıyla veri almak
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Bir tane değer gir");
+        int n=scanner.nextInt();
+        System.out.println("Girdiğiniz değer");
+        System.out.println(n);
     }
 }
