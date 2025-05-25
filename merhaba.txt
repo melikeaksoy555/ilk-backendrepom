@@ -1,0 +1,5 @@
+Merhaba Github!
+
+ozellik-deneme branch'ı oluşturuldu.
+
+İlk commit
