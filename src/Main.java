@@ -39,10 +39,19 @@ public class Main {
         System.out.println(PI);*/
 
         // Scanner: Kullanıcıdan klavye aracılığıyla veri almak
-        Scanner scanner=new Scanner(System.in);
+        /*Scanner scanner=new Scanner(System.in);
         System.out.println("Bir tane değer gir");
         int n=scanner.nextInt();
         System.out.println("Girdiğiniz değer");
-        System.out.println(n);
+        System.out.println(n);*/
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Lütfen adınızı giriniz: ");
+        String isim = scanner.nextLine();
+        System.out.print("Lütfen yaşınızı giriniz: ");
+        int yas = scanner.nextInt();
+        System.out.println("\nGirilen Bilgiler:");
+        System.out.println("Ad: " + isim);
+        System.out.println("Yaş: " + yas);
+        scanner.close();
     }
 }
