@@ -107,8 +107,14 @@ int not = scanner.nextInt();
             System.out.println("Harf notunuz: " + harfNotu);
             scanner.close();
 }*/
-        for (int i = 1; i <= 10; i++) {
+        /*for (int i = 1; i <= 10; i++) {
             System.out.println(i);
+        }*/
+        int sayi = 10;
+
+        while (sayi >= 1) {
+            System.out.println(sayi);
+            sayi--;
         }
 }
 }
