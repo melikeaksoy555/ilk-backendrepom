@@ -4,7 +4,7 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
- System.out.println("Veri tipleri ve Değişkenler");
+// System.out.println("Veri tipleri ve Değişkenler");
 
     // İlkel veri tipleri
         // int, short, byte, long, double, float, char, boolean = true, false
@@ -53,19 +53,21 @@ public class Main {
         System.out.println("Ad: " + isim);
         System.out.println("Yaş: " + yas);
         scanner.close();*/
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Birinci sayıyı girin: ");
-        double sayi1 = scanner.nextDouble();
-        System.out.print("İkinci sayıyı girin: ");
-        double sayi2 = scanner.nextDouble();
-        System.out.println("\nİşlem Sonuçları:");
-        System.out.println("Toplama: " + (sayi1 + sayi2));
-        System.out.println("Çıkarma: " + (sayi1 - sayi2));
-        System.out.println("Çarpma: " + (sayi1 * sayi2));
-        if (sayi2 != 0) {
-            System.out.println("Bölme: " + (sayi1 / sayi2));
-        } else {
-            System.out.println("Bölme: Tanımsız (Sıfıra bölme hatası)");
+
+                Scanner scanner = new Scanner(System.in);
+
+                System.out.print("Bir sayı girin: ");
+                double sayi = scanner.nextDouble();
+
+                if (sayi > 0) {
+                    System.out.println("Pozitif sayı");
+                }
+                else if (sayi < 0) {
+                    System.out.println("Negatif sayı");
+                }
+                else {
+                    System.out.println("Sayı sıfır");
+                }
+                scanner.close();
+            }
         }
-    }
-}
