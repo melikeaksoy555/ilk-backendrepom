@@ -117,11 +117,37 @@ int not = scanner.nextInt();
             sayi--;
         }*/
 
-        int[] sayilar = {10, 20, 30, 40, 50};
+        /*int[] sayilar = {10, 20, 30, 40, 50};
 
         System.out.println("Dizinin elemanları:");
         for (int i = 0; i < sayilar.length; i++) {
             System.out.println("indeks[" + i + "] = " + sayilar[i]);
+        }*/
+
+                Scanner scanner = new Scanner(System.in);
+
+                System.out.print("Birinci sayıyı girin: ");
+                double sayi1 = scanner.nextDouble();
+
+                System.out.print("İkinci sayıyı girin: ");
+                double sayi2 = scanner.nextDouble();
+
+                System.out.print("Üçüncü sayıyı girin: ");
+                double sayi3 = scanner.nextDouble();
+
+
+                double enBuyuk = sayi1;
+
+                if (sayi2 > enBuyuk) {
+                    enBuyuk = sayi2;
+                }
+
+                if (sayi3 > enBuyuk) {
+                    enBuyuk = sayi3;
+                }
+
+                System.out.println("Girilen en büyük sayı: " + enBuyuk);
+
+                scanner.close();
+            }
         }
-}
-}
