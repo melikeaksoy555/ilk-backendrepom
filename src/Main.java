@@ -79,7 +79,7 @@ public class Main {
             System.out.println("Tek sayı");
         }
         scanner.close();  */
-Scanner scanner = new Scanner(System.in);
+/*Scanner scanner = new Scanner(System.in);
 System.out.print("Notunuzu girin (0-100): ");
 int not = scanner.nextInt();
         if (not < 0 || not > 100) {
@@ -106,6 +106,9 @@ int not = scanner.nextInt();
 
             System.out.println("Harf notunuz: " + harfNotu);
             scanner.close();
-}
+}*/
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
 }
 }
