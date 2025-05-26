@@ -110,11 +110,18 @@ int not = scanner.nextInt();
         /*for (int i = 1; i <= 10; i++) {
             System.out.println(i);
         }*/
-        int sayi = 10;
+       /* int sayi = 10;
 
         while (sayi >= 1) {
             System.out.println(sayi);
             sayi--;
+        }*/
+
+        int[] sayilar = {10, 20, 30, 40, 50};
+
+        System.out.println("Dizinin elemanları:");
+        for (int i = 0; i < sayilar.length; i++) {
+            System.out.println("indeks[" + i + "] = " + sayilar[i]);
         }
 }
 }
