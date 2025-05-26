@@ -54,7 +54,7 @@ public class Main {
         System.out.println("Yaş: " + yas);
         scanner.close();*/
 
-                Scanner scanner = new Scanner(System.in);
+              /*  Scanner scanner = new Scanner(System.in);
 
                 System.out.print("Bir sayı girin: ");
                 double sayi = scanner.nextDouble();
@@ -68,6 +68,15 @@ public class Main {
                 else {
                     System.out.println("Sayı sıfır");
                 }
-                scanner.close();
-            }
+                scanner.close();*/
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir tam sayı girin: ");
+        int sayi = scanner.nextInt();
+
+        if (sayi % 2 == 0) {
+            System.out.println("Çift sayı");
+        } else {
+            System.out.println("Tek sayı");
+        }
+        scanner.close();            }
         }
