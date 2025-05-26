@@ -44,7 +44,7 @@ public class Main {
         int n=scanner.nextInt();
         System.out.println("Girdiğiniz değer");
         System.out.println(n);*/
-        Scanner scanner = new Scanner(System.in);
+       /* Scanner scanner = new Scanner(System.in);
         System.out.print("Lütfen adınızı giriniz: ");
         String isim = scanner.nextLine();
         System.out.print("Lütfen yaşınızı giriniz: ");
@@ -52,6 +52,20 @@ public class Main {
         System.out.println("\nGirilen Bilgiler:");
         System.out.println("Ad: " + isim);
         System.out.println("Yaş: " + yas);
-        scanner.close();
+        scanner.close();*/
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Birinci sayıyı girin: ");
+        double sayi1 = scanner.nextDouble();
+        System.out.print("İkinci sayıyı girin: ");
+        double sayi2 = scanner.nextDouble();
+        System.out.println("\nİşlem Sonuçları:");
+        System.out.println("Toplama: " + (sayi1 + sayi2));
+        System.out.println("Çıkarma: " + (sayi1 - sayi2));
+        System.out.println("Çarpma: " + (sayi1 * sayi2));
+        if (sayi2 != 0) {
+            System.out.println("Bölme: " + (sayi1 / sayi2));
+        } else {
+            System.out.println("Bölme: Tanımsız (Sıfıra bölme hatası)");
+        }
     }
 }
